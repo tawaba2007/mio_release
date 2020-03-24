@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+#shopGuide * {
+  margin: 0;
+}
+
+#shopGuide {
+  margin-bottom: 60px;
+}
+
+#shopGuide .contaner {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#shopGuide .title_block .title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 5vw;
+  color: #555;
+  letter-spacing: 1vw;
+  font-family: "DM Serif Display", serif;
+}
+
+#shopGuide .title_block .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#shopGuide .guide_list:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+#shopGuide .guide_block label {
+  padding: 15px;
+  cursor: pointer;
+  background: #f2f2f2;
+  font-size: 14px;
+  display: inline-block;
+  width: 100%;
+}
+
+/*チェックは見えなくする*/
+#shopGuide .guide_block input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+#shopGuide .guide_block .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+#shopGuide .guide_block input:checked ~ .hidden_show {
+  height: auto;
+  opacity: 1;
+}
+
+#shopGuide .guide_list .hidden_show .text_wrapp {
+  padding: 20px;
+}
+
+#shopGuide .guide_list .text_wrapp .title_sub {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#shopGuide .guide_list .text_wrapp .section {
+  margin-bottom: 20px;
+}
+
+#shopGuide .guide_list .text_wrapp .text {
+  margin-bottom: 10px;
+}
+
+#shopGuide .guide_list .text_wrapp .list {
+  margin-bottom: 10px;
+}
+
+#shopGuide .guide_list .text_wrapp .list .list_item {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/******************************
+	Media Query
+*******************************/
+@media only screen and (min-width: 768px) {
+  #shopGuide {
+    margin-bottom: 100px;
+  }
+
+  #shopGuide .contaner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #shopGuide .guide_block {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #shopGuide .title_block .title {
+    font-size: 24px;
+    color: #555;
+  }
+
+  #shopGuide .title_block .text {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+}

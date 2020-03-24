@@ -1,0 +1,26 @@
+
+// color
+$colo-white: #FFFFFF;
+$color-gray: #333333;
+
+// text-color
+$text-color-gray: #333333;
+$text-color-white: #FFFFFF;
+
+// font-size
+@mixin font-size($size, $base: 16) {
+  font-size: $size + px;
+  font-size: ($size / $base) + rem;
+}
+
+// margin
+$gutter: 20px;
+
+// mediaquery
+$pc: 768px;
+
+@mixin pclayout {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}

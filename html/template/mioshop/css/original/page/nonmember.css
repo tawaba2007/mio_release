@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+#page_shopping_nonmember #detail_box__company_name {
+    display: none;
+}

@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+#event {
+  margin-bottom: 60px;
+}
+
+#event .contaner {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+#event .title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 5vw;
+  color: #555;
+  letter-spacing: 1vw;
+  font-family: "DM Serif Display", serif;
+}
+
+#event .banner_block .banner:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+/******************************
+	Media Query
+*******************************/
+@media only screen and (min-width: 768px) {
+  #event {
+    margin-bottom: 100px;
+  }
+
+  #event .contaner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #event .title_block {
+    margin-bottom: 40px;
+  }
+
+  #event .title {
+    font-size: 24px;
+  }
+
+  #event .banner_block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #event .banner_block .banner {
+    width: calc((100% - 6px) / 2);
+  }
+
+  #event .banner_block .banner:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+}

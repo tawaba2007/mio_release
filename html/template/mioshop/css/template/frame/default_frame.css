@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* ページ全体padding調整 */
+#contents .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#contents .container .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.front_page #contents .row>#main {
+  padding: 0;
+}
+
+.front_page #contents .row>#main #main_middle .row>div {
+  padding: 0;
+}
+
+/* / ページ全体padding調整 */
+
+@media only screen and (max-width: 767px) {
+  .drawer-open+.drawer {
+    height: 100%;
+    visibility: visible;
+    -webkit-transition: visibility 0s 0s;
+    -moz-transition: visibility 0s 0s;
+    transition: visibility 0s 0s;
+  }
+}
+
+@media only screen and (min-width: 768px) {}
+
+/* ハンバーガーメニューstyle */
+.nav-trigger span {
+  width: 16px;
+}
+
+.nav-trigger span,
+.nav-trigger span::before,
+.nav-trigger span::after {
+  height: 1px;
+}
+
+/* / ハンバーガーメニューstyle */

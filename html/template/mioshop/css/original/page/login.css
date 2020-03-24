@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+.mio #customer_box__login_menu li a,
+.mio #guest_box__message {
+    color: #333;
+}
+
+.mio .member-box {
+    margin-bottom: 20px;
+}
+
+.mio .member-box-container {
+    background: #f3f4f4;
+    padding: 20px 40px 30px;
+}
+
+.mio .member-box .text-block .title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 0;
+}
+
+.mio .member-box .text-block .title-text {
+    color: #000;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.mio .member-box .button-block .text {
+    color: #000;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.mio .member-box .button-block .login-link {
+    display: block;
+    text-align: center;
+    background: #555;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 248px;
+    margin: 0 auto;
+}
+
+.mio.cart_page.mio #login_box {
+     width: 100%;
+     max-width: 600px;
+     margin: 0 auto;
+}
+
+/* mypage */
+.mio.mypage #mypage_login__login_menu .mypage_login__login_menu_link{
+    color: #333333;
+}
+
+.mio.mypage #login_box .column .btn_area button {
+    max-width: 248px;
+    margin: 0 auto;
+}
+
+.mio.mypage #login_box .column .form-group label {
+    color: #333;
+}

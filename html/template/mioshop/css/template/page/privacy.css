@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+#page_help_privacy #main .page-heading {
+  text-align: center;
+  font-weight: normal;
+  font-family: "DM Serif Display", serif;
+  border-top: none;
+  border-bottom: none;
+}
+
+#page_help_privacy .poricyList_block .list .list_item {
+  line-height: 1.4;
+  margin-bottom: 20px;
+  text-indent: -1em;
+  padding-left: 10px;
+}

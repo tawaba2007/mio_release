@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* 既存のpage */
+@import url("privacy.css");
+@import url("tradelaw.css");
+@import url("guide.css");
+
+/* 新規制作したpage */

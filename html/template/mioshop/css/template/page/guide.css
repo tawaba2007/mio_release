@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+#page_help_guide #contents {
+  min-height: unset;
+}
+
+#guide_wrap #main .page-heading {
+  text-align: center;
+  font-weight: normal;
+  font-family: "DM Serif Display", serif;
+  border-bottom: none;
+  border-top: none;
+  margin-top: 20px;
+}

@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+#cart_area .icon_image {
+    vertical-align: top;
+}
+
+/* cartのlayout */
+#header #cart_area p.cart-trigger {
+    right: unset;
+    top: -5px;
+}
+
+@media only screen and (min-width: 768px) {}

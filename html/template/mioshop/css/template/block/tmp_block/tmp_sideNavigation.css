@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+#sideNavigation {
+  display: none;
+}
+
+.drawer.sp #sideNavigation {
+  display: block;
+}
+
+#sideNavigation .contaner {
+  padding: 40px 20px;
+  background: #d4c8c4;
+}
+
+#sideNavigation .text_link {
+  color: #fff;
+}
+
+#sideNavigation .section {
+  margin-bottom: 40px;
+}
+
+#sideNavigation .login_block .login_block_member {
+  margin-bottom: 10px;
+}
+
+#sideNavigation .login_block .text_link_image {
+  margin-right: 5px;
+  vertical-align: text-bottom;
+  width: 21px;
+}
+
+#sideNavigation .text_link {
+  font-size: 16px;
+}
+
+#sideNavigation .navigation_list .list_item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#sideNavigation .navigation_list .list_item .text_link {
+  font-size: 16px;
+  font-family: "YuGothic";
+}
+
+#sideNavigation .sns_block .title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "YuGothic";
+}
+
+#sideNavigation .sns_block .text_link {
+  font-size: 16px;
+  font-family: "YuGothic";
+}
+
+#sideNavigation .sns_block .list .list_item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#sideNavigation .official_block .text_link_image {
+  margin-right: 5px;
+  width: auto;
+}
+
+#sideNavigation
+  .saerch_block
+  .saerch_form_wrapp
+  .saerch_form_form
+  .input_search
+  .form-control {
+  width: 180px;
+}
+
+#sideNavigation
+  .saerch_block
+  .saerch_form_wrapp
+  .saerch_form_form
+  .input_search
+  .bt_search {
+  right: 15px;
+  height: 48px;
+}
+
+#sideNavigation
+  .saerch_block
+  .saerch_form_wrapp
+  .saerch_form_form
+  .input_search
+  .bt_search
+  .button_image {
+  width: auto;
+}
+
+/******************************
+	Media Query
+*******************************/
+@media only screen and (min-width: 768px) {
+  #sideNavigation {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+#contents_top .title_block .title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 5vw;
+  color: #555;
+  letter-spacing: 1vw;
+  font-family: "DM Serif Display", serif;
+}
+
+#contents_top #item_list {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#contents_top .pickup_item {
+  margin-bottom: 30px;
+}
+
+/******************************
+	Media Query
+*******************************/
+@media only screen and (min-width: 768px) {
+  #contents_top .title_block {
+    margin-bottom: 40px;
+  }
+
+  #contents_top .title_block .title {
+    font-size: 24px;
+  }
+
+  #contents_top #item_list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+}

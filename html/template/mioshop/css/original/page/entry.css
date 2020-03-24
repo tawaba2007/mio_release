@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+#page_entry_complete.mio #contents {
+    padding-top: 70px;
+}
+
+.mio #top_box__company_name,
+.mio #top_box__fax,
+.mio #top_box__birth {
+    display: none;
+}
+
+.mio .heading01 {
+    color: #ffffff;
+}

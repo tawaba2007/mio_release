@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+#contents #guide .container {
+    padding-left: 8px;
+    padding-right: 8px;
+}

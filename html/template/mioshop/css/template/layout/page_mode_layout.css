@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.tmp_page_mode #contents {
+    min-height: unset;
+}
+
+.tmp_page_mode .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+}

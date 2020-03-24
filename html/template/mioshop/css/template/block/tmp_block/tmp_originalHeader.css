@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+#originalHeader * {
+  margin: 0;
+  padding: 0;
+}
+
+#originalHeader .header_logo_wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+#originalHeader .header_logo_link {
+  display: block;
+}
+
+/******************************
+	Media Query
+*******************************/
+@media only screen and (min-width: 768px) {
+  #originalHeader .header_logo_wrapp {
+    display: block;
+    align-items: unset;
+    justify-content: unset;
+    padding: 0;
+  }
+
+  #originalHeader .header_logo_link {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+}

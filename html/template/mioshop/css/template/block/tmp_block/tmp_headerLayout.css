@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+body.headerLayout_js {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.headerLayout_js #btn_menu {
+    left: 10px;
+    top: -6px;
+}
+
+.headerLayout_js #header #cart_area p.cart-trigger.position {
+    right: 10px;
+}
+
+.headerLayout_js .nav-trigger span {
+    width: 16px;
+}
+
+.headerLayout_js .nav-trigger span::before,
+.headerLayout_js .nav-trigger span::after {
+    width: 24px;
+}
+
+.headerLayout_js .drawer {
+    left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .headerLayout_js .overlay.is-visible {
+        -webkit-transform: translateX(260px);
+        -moz-transform: translateX(260px);
+        -ms-transform: translateX(260px);
+        -o-transform: translateX(260px);
+        transform: translateX(260px);
+    }
+
+    .headerLayout_js .overlay.is-visible.cart-is-visible {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .headerLayout_js .drawer-open #contents,
+    .headerLayout_js .drawer-open #header,
+    .headerLayout_js .drawer-open #footer,
+    .headerLayout_js .drawer-open .pagetop {
+        -webkit-transform: translateX(260px);
+        -moz-transform: translateX(260px);
+        -ms-transform: translateX(260px);
+        -o-transform: translateX(260px);
+        transform: translateX(260px);
+    }
+
+    .headerLayout_js .drawer-open+.drawer {
+        height: 100%;
+        visibility: visible;
+        -webkit-transition: visibility 0s 0s;
+        -moz-transition: visibility 0s 0s;
+        transition: visibility 0s 0s;
+    }
+}

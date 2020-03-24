@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+#pickup {
+  margin-bottom: 60px;
+}
+
+#pickup .title_block .title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 5vw;
+  color: #555;
+  letter-spacing: 1vw;
+  font-family: "DM Serif Display", serif;
+}
+
+#pickup .itemList_block .item_block {
+  padding: 0 5px;
+}
+
+#pickup .button_block .button_text {
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  border: 1px solid #555;
+}
+
+#pickup .button_block .button_link {
+  font-family: "DM Serif Display", serif;
+  display: block;
+  padding: 10px 0;
+}
+
+/******************************
+	Media Query
+*******************************/
+@media only screen and (min-width: 768px) {
+  #pickup {
+    margin-bottom: 100px;
+  }
+
+  #pickup .title_block {
+    margin-bottom: 40px;
+  }
+
+  #pickup .title_block .title {
+    font-size: 24px;
+  }
+}

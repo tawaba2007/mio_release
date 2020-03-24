@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+#page_help_tradelaw #main .page-heading {
+    text-align: center;
+    font-weight: normal;
+    font-family: "DM Serif Display", serif;
+    border-top: none;
+    border-bottom: none;
+}
