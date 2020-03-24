@@ -1,0 +1,9 @@
+database:
+    driver: 'pdo_mysql'
+    host: 'mysql8013.xserver.jp'
+    dbname: 'mioshop_ec1'
+    port: ''
+    user: 'mioshop_ec1'
+    password : '31yamtlx3e'
+    charset: utf8
+    defaultTableOptions: { collate: utf8_general_ci }

@@ -1,0 +1,87 @@
+<div
+    class="drawer_block">
+    <!-- sideNavigation -->
+    <div id="sideNavigation" class="template original">
+        <div class="contaner">
+            <div class="login_block section">
+                <div class="login_block_member">
+                    <a class="text_link" href="https://mioofficial.jp/entry"><img
+                            class="text_link_image" src="{{
+                            app.config.front_urlpath }}/img/icon/member.svg"
+                            alt="新規会員登録">新規会員登録</a>
+                </div>
+                <div class="login_block_login">
+                    <a class="text_link" href="https://mioofficial.jp/mypage/login"><img
+                            class="text_link_image" src="{{
+                            app.config.front_urlpath }}/img/icon/login.svg"
+                            alt="ログイン">ログイン</a>
+                </div>
+            </div>
+            <div class="navigation_block section">
+                <ul class="navigation_list">
+                    <li class="list_item">
+                        <a class="text_link" href="{{ url('homepage') }}">HOME</a>
+                    </li>
+                    <li class="list_item">
+                        <a class="text_link"
+                            href="https://mioofficial.jp/products/list">AII ITEM</a>
+                    </li>
+                    <li class="list_item">
+                        <a class="text_link"
+                            href="https://mioofficial.jp/user_data/lookbook">Look Book 2020</a>
+                    </li>
+                    <li class="list_item">
+                        <a class="text_link"
+                            href="https://mioofficial.jp/help/guide">SHOP GUIDE</a>
+                    </li>
+                    <li class="list_item">
+                        <a class="text_link" href="https://mioofficial.jp/contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sns_block section">
+                <h3 class="title">Official's LINK</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <a class="text_link"
+                            href="https://www.instagram.com/mio.official_/">ー
+                            Instagram</a>
+                    </li>
+                    <li class="list_item">
+                        <a class="text_link" href="https://line.me/R/ti/p/%40686amnjh">ー
+                            LINE</a>
+                    </li>
+                </ul>
+            </div>
+<!--
+            <div class="official_block section">
+                <a class="text_link"
+                    href="#"><img
+                        class="text_link_image"
+                        src="{{
+                            app.config.front_urlpath }}/img/icon/insta_white.png"
+                        alt="Shop Offisial Instagram">Shop
+                    Official
+                    Instagram</a>
+            </div>
+-->
+            <div class="saerch_block section">
+                <div class="saerch_form_wrapp">
+                    <form method="get" id="searchform" action="/products/list"
+                        class="saerch_form_form">
+                        <div class="input_search clearfix">
+                            <input type="search" id="name" name="name"
+                                maxlength="50" placeholder="Search"
+                                class="form-control">
+                            <button type="submit" class="bt_search"><img
+                                    class="button_image" src="{{
+                                    app.config.front_urlpath
+                                    }}/img/icon/search.png" alt="search"></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /sideNavigation -->
+</div>

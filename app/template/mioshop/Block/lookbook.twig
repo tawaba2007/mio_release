@@ -1,0 +1,72 @@
+<div class="wrapper">
+  <div class="column look1">
+    <div class="info">
+
+    </div>
+  </div>
+  <div class="column look2">
+    <div class="info">
+
+    </div>
+  </div>
+
+</div>
+
+<div class="wrapper">
+    <div class="column look1">
+      <div class="info">
+  
+      </div>
+    </div>
+    <div class="column look2">
+      <div class="info">
+  
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="wrapper">
+    <div class="column look1">
+      <div class="info">
+  
+      </div>
+    </div>
+    <div class="column look2">
+      <div class="info">
+  
+      </div>
+    </div>
+  
+  </div>
+
+  <style>
+ 
+.column {
+    height: 80vh;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: auto 0;
+}
+    
+.look1 {
+    background: url("https://mioofficial.jp/html/template/mioshop/img/item/item01-img.jpg") no-repeat top center;
+    background-size: cover;
+    margin: 45px;
+
+}
+.look2 {
+    background: url({{ app.config.front_urlpath }}/img/item/item03-img.png) no-repeat top center;
+    background-size: cover;
+    margin: 45px;
+}
+
+@media all and (min-width: 500px) {
+  .wrapper {
+    display: flex;
+  }
+}
+  </style>
