@@ -179,3 +179,127 @@ background: #000;
     }
 }
 /*  / 商品スライダー画像表示 */
+
+/*20200316 kikuzawa*/
+#page_product_detail input#quantity,
+#page_product_detail label[for="quantity"],
+#page_product_detail label[for="quantity"]+.required,
+#page_product_detail [for="classcategory_id1"],
+#page_product_detail [for="classcategory_id2"],
+#page_product_detail [for="classcategory_id1"]+.required,
+#page_product_detail [for="classcategory_id2"]+.required,
+#page_product_detail select#classcategory_id1,
+#page_product_detail select#classcategory_id2{
+    display: none;
+}
+#page_product_detail #detail_cart_box input[name="quantity"],
+#page_product_detail #detail_cart_box label[for="quantity"],
+#page_product_detail #detail_cart_box label[for="quantity"]+.required{
+    display: inline;
+}
+.product-class .label{
+    margin-bottom: 10px;
+}
+.product-class .label span{
+    margin-left: 10px;
+}
+.product-class.c2 ul{
+    display: none;
+}
+.product-class.c2 ul.on{
+    display: block;
+}
+#page_product_detail .product-class{
+    margin-bottom: 20px;
+}
+#page_product_detail .product-class li{
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    min-width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    border: #414141 1px solid;
+}
+#page_product_detail .product-class li.on{
+    border-color: #fff;
+}
+#page_product_detail .product-class.color li{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    text-indent: -9999px;
+    border: none;
+    border-radius: 100%;
+}
+.product-class.color li:after{
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    border: #414141 1px solid;
+    border-radius: 100%;
+    z-index: -1;
+}
+.product-class.color li.on:after{
+    border-color: #fff;
+}
+.product-class.color .c12{/*BLACK*/
+    background: #000000;
+}
+.product-class.color .c13{/*WHITE*/
+    background: #FFFFFF;
+}
+#add-cart.disable{
+    pointer-events : none;
+    opacity: 0.65;
+}
+#detail_cart_box__cart_quantity dt{
+    float: none;
+}
+#detail_cart_box__cart_quantity dd{
+    margin-bottom: 30px;
+    padding: 0;
+}
+#detail_cart_box__cart_quantity dd .inr{
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 37px;
+    line-height: 37px;
+    border: #e1e1db 1px solid;
+}
+#detail_cart_box__cart_quantity dd .inr *{
+    display: inline;
+}
+#detail_cart_box__cart_quantity dd .inr input{
+    margin: 0;
+    padding: 0;
+    width: 55px;
+    height: 35px;
+    text-align: center;
+    background: none;
+    border: none;
+    -moz-appearance:textfield;
+}
+#detail_cart_box__cart_quantity dd .inr input::-webkit-outer-spin-button,
+#detail_cart_box__cart_quantity dd .inr input::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+#detail_cart_box__cart_quantity .stock-btn{
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#page_product_detail .detail_cart_box__insert_button_list{
+    padding-left: 0;
+    padding-right: 0;
+}
+/*end 20200316 kikuzawa*/
