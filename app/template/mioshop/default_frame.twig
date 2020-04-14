@@ -51,8 +51,12 @@
 
 </head>
 <body id="page_{{ app.request.get('_route') }}" class="{{ body_class|default('other_page') }}">
+  <!--loading-->
+  <div class="loading">
+    <img src="{{ app.config.front_urlpath }}/img/icon/logoanime_a.gif">
+  </div>
+  <!--loading end-->
   <div id="wrapper">
-
     <header id="header">
       <div class="container inner">
         {# ▼HeaderInternal COLUMN #}
@@ -160,6 +164,7 @@
   <script src="{{ app.config.front_urlpath }}/js/vendor/slick.min.js?v={{ constant('Eccube\\Common\\Constant::VERSION') }}"></script>
   <script src="{{ app.config.front_urlpath }}/js/function.js?v={{ constant('Eccube\\Common\\Constant::VERSION') }}"></script>
   <script src="{{ app.config.front_urlpath }}/js/eccube.js?v={{ constant('Eccube\\Common\\Constant::VERSION') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
   <script>
   $(function () {
     $('#drawer').append($('.drawer_block').clone(true).children());
@@ -173,10 +178,18 @@
     });
   });
   </script>
+<!-- original / loading
+============================================= -->
+<script src="{{ app.config.front_urlpath }}/js/common/compornents/loading.js"></script>
 <!-- original
 ============================================= -->
 <script src="{{ app.config.front_urlpath }}/js/common/compornents/tmp_pickup.js"></script>
 <script src="{{ app.config.front_urlpath }}/js/common/compornents/tmp_criate_name.js"></script>
+<script src="{{ app.config.front_urlpath }}/js/common/compornents/tmp_criate_name.js"></script>
+<!-- 動画遅延読み込み -->
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/plugins/unveilhooks/ls.unveilhooks.min.js"></script>
+<!-- / 動画遅延読み込み -->
 {% block javascript %}{% endblock %}
 </body>
 </html>
