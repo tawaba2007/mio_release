@@ -189,4 +189,7 @@
 .mio #sideNavigation .official_block .text_link_image {
   width: 30px;
 }
+
+@import url("tmp_loading.css");
+
 /*# sourceMappingURL=block_common.css.map */
