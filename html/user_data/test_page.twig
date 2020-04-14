@@ -1,0 +1,72 @@
+{#
+This file is part of EC-CUBE
+
+Copyright(c) 2000-2015 LOCKON CO.,LTD. All Rights Reserved.
+
+http://www.lockon.co.jp/
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#}
+{% extends 'default_frame.twig' %}
+
+{% set body_class = 'product_page' %}
+
+{% block main %}
+	<div id="contents" class="main_only">
+        <!--loading-->
+        <div class="loading">
+            <img src="{{ app.config.front_urlpath }}/img/icon/logoanime_a.gif">
+        </div>
+        <!--loading end-->
+        <div class="main_visual">
+            <div class="item">
+                <video id="video" preload="none" muted loop autoplay playsinline data-poster="" class="lazyload">
+                    <source src="{{ app.config.front_urlpath }}/img/movie/mv.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <script>
+            // Cookie
+            $(function () {
+                if (sessionStorage.getItem('access')) {
+                    console.log('2回目以降のアクセスです');
+                    $(".loading").css("display", "none");
+                    $('#video').get(0).play()
+                } else {
+                    console.log('初回アクセスです');
+                    sessionStorage.setItem('access', 0);
+                    $('.main_visual').css('display', 'none');
+                    $(".loading").css("display", "block");
+                }
+            });
+
+            $(window).load(function () { //全ての読み込みが完了したら実行
+              $('.loading').delay(900).fadeOut(800);
+              $('.main_visual').css('display', 'block');
+            });
+
+            //10秒たったら強制的にロード画面を非表示
+            $(function () {
+                setTimeout('stopload()', 5000);
+            });
+
+            function stopload() {
+                $('.main_visual').css('display', 'block');
+                $('.loading').delay(900).fadeOut(800);
+            }
+
+        </script>
+	</div>
+{% endblock %}
